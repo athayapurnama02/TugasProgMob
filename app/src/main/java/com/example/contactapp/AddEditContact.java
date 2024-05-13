@@ -236,6 +236,7 @@ public class AddEditContact extends AppCompatActivity {
                 );
 
                 Toast.makeText(getApplicationContext(), "Updated Successfully....", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(AddEditContact.this, MainActivity.class));
 
             }else {
                 // add mode
@@ -250,6 +251,7 @@ public class AddEditContact extends AppCompatActivity {
                 );
                 //To check insert data successfully ,show a toast message
                 Toast.makeText(getApplicationContext(), "Inserted Successfully.... "+id, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(AddEditContact.this, MainActivity.class));
             }
 
         }else {
